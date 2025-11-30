@@ -1,0 +1,88 @@
+.forecast-card {
+    padding: 1.5rem;
+}
+
+.forecast-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.forecast-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.forecast-header-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 0.5rem;
+}
+
+.forecast-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.forecast-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.day-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.day-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.date-text {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.condition-col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.condition-text-sm {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+.temp-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Left aligned to match Day col */
+    justify-content: center;
+    font-weight: 600;
+    gap: 2px;
+}
+
+.max-temp {
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.min-temp {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-left: 0;
+}
